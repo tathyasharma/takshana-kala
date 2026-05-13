@@ -859,7 +859,8 @@ footer {
 <!-- Music -->
 <button id="music-btn" onclick="toggleMusic()" title="Toggle ambient music">♪</button>
 <audio id="bg-music" loop>
-  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c5/Raga_Bhairavi-_Lata_Mangeshkar.ogg/Raga_Bhairavi-_Lata_Mangeshkar.ogg.mp3" type="audio/mpeg">
+  <source src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Raga_Bhairavi-_Lata_Mangeshkar.ogg" type="audio/ogg">
 </audio>
 
 <!-- Nav -->
@@ -1249,7 +1250,8 @@ const music = document.getElementById('bg-music');
 const btn = document.getElementById('music-btn');
 
 // Use a proper Indian classical ambient track
-music.src = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3';
+// Using Indian classical ambient - raga based
+  music.src = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3';
 
 function toggleMusic() {
   if (playing) {
